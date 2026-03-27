@@ -1,0 +1,104 @@
+/* ── Work Section ── */
+.work-section {
+  position: relative;
+  z-index: 1;
+  background-color: var(--backgroundColor);
+  padding: 80px 0;
+}
+
+.work-section h2 {
+  font-size: 70px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.work-section h2>span {
+  color: var(--accentColor);
+}
+
+.work-container {
+  margin: auto;
+}
+
+/* ── Drive Link Box ── */
+.work-drive-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 40px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.work-drive-text {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 520px;
+  line-height: 1.7;
+  margin: 0 0 36px;
+}
+
+.work-drive-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--backgroundColor);
+  background: var(--accentColor);
+  border-radius: 50px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.work-drive-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(94, 234, 212, 0.25);
+}
+
+.work-drive-icon {
+  font-size: 20px;
+}
+
+/* ── Responsive ── */
+@media only screen and (max-width: 1400px) {
+  .work-section h2 {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .work-section {
+    padding: 50px 0;
+  }
+
+  .work-section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .work-drive-box {
+    padding: 40px 24px;
+  }
+
+  .work-drive-text {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .work-drive-box {
+    padding: 32px 20px;
+  }
+
+  .work-drive-link {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+}
