@@ -82,6 +82,32 @@
   color: var(--accentColor);
 }
 
+.company-name-with-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.company-name-with-logo h5 {
+  margin: 0;
+}
+
+.company-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.company-logo:hover {
+  transform: scale(1.12);
+  box-shadow: 0 0 12px rgba(20, 184, 166, 0.4);
+}
+
 .career-timeline {
   position: absolute;
   top: -50px;
@@ -158,6 +184,12 @@
     font-size: 17px;
   }
 
+  .company-logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+  }
+
   .career-info h3 {
     font-size: 40px;
   }
@@ -226,6 +258,12 @@
 
   .career-info h3 {
     font-size: 33px;
+  }
+
+  .company-logo {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
   }
 
   .career-info-in,
